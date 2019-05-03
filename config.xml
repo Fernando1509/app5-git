@@ -1,49 +1,44 @@
-﻿ <?xml version="1.0" encoding="UTF-8"?>  
+﻿<?xml version="1.0" encoding="UTF-8"?>  
 
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id ="com.phonegap.app3"
+id ="com.phonegap.app5"
 version = "1.0.0">
 
-<name>app5 advertencia del Dispocitivo </name>
+<name>ADVERTENCIA</name>
 
 <description>
-Aplicación que realize una vibracion y deep del Dispocitivo
+Aplicacion que hace que el celular vibre o explote 
 </description>
 
 <author href="https://build.phonegap.com" email="ff088366@gmail.com">
-Fernando Flores Guzmán
+AFernando Flores Guzman 
 </author>
 
-<!--personaliza la aplicacion y plataforma -->
-<!-- <preference name="orientation" value="default" /> -->
-<preference name="orientation"    value="portrait"/>
+<!--Personaliza la aplicacion y plataforma 
+<preference name="orientation"    value="default"/> -->
+<preference name="orientation"   value="portrait"/>
 <!--preference name="orientation"   value="landscape"/> -->
-<preference name="orientation"   value="universal"/>
 <preference name="target-device"   value="universal"/>
 <preference name="fullscreen"     value="true"/>
 <preference name="android-installLocation"  value="auto"/>
-<preference name="permissions"  value="INTERNET"/>
+<preference name="permissions" value="INTERNET"/>
 
-<!--plugins-->
-<!--Core plugins-->
+<!--Plugins-->
 <plugin name="cordova-plugin-device" spec="~1.1.4"/>
 <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
 <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
 
-<!-- <plugins -->
-<!--core plugins -->
-<plugin name="cordove-plugin-device" spec="~1.1.4" />
-<plugin name="cordove-plugin-vibration" spec="~2.1.3" />
-<plugin name="cordove-plugin-dialogs" spec="~1.3.1" />
-
-<plugin name="cordova-plugion-geolocation" source=npm"/> 
-<!--third part plugins-->
+<!-- <plugin name="cordova-plugin-geolocation" source="npm"/> -->
+<!--para accesar a paginas en internet-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
 
 <!-- Colocar icono app -->
 
 <icon src="images/icons-png/Apps-system-software-update-icon.png"/>
 
-</widget>
-
-
+</widget> 
